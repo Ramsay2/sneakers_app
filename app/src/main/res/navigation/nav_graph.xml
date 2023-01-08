@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sneakerFragment">
+
+    <fragment
+        android:id="@+id/sneakerFragment"
+        android:name="com.sachin.sneaker_app.view.sneakers_fragment.SneakerFragment"
+        android:label="SneakerFragment" >
+        <action
+            android:id="@+id/action_sneakerFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.sachin.sneaker_app.view.cart_fragment.CartFragment"
+        android:label="CartFragment" />
+</navigation>
