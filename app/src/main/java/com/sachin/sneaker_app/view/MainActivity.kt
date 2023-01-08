@@ -5,10 +5,9 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
 import com.sachin.sneaker_app.R
 import com.sachin.sneaker_app.databinding.ActivityMainBinding
-import com.sachin.sneaker_app.viewModel.SneakerViewModel
+import com.sachin.sneaker_app.view.sneakers_fragment.SneakerViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 

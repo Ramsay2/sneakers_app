@@ -1,14 +1,13 @@
 package com.sachin.sneaker_app.view.cart_fragment
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.sachin.sneaker_app.adapter.SneakersCartAdapter
+import com.sachin.sneaker_app.adapter.cart_adapter.SneakersCartAdapter
 import com.sachin.sneaker_app.databinding.FragmentCartBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -31,19 +30,19 @@ class CartFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.getCartProducts().observe(viewLifecycleOwner) {
-            viewModel._sneakerData.addAll(it)
+            viewModel.sneakerData.addAll(it)
             setAdapter()
         }
 
         binding.clearCart.setOnClickListener {
             viewModel.clearCart()
-            viewModel._sneakerData.clear()
+            viewModel.sneakerData.clear()
         }
 
     }
 
     fun setAdapter() {
-        sneakerAdapter = SneakersCartAdapter(viewModel._sneakerData)
+        sneakerAdapter = SneakersCartAdapter(viewModel.sneakerData)
         binding.rvSneakers.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = sneakerAdapter

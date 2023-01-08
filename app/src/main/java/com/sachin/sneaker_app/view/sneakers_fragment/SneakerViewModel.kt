@@ -1,11 +1,10 @@
-package com.sachin.sneaker_app.viewModel
+package com.sachin.sneaker_app.view.sneakers_fragment
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.sachin.sneaker_app.adapter.SneakersAdapter
+import com.sachin.sneaker_app.adapter.sneakerAdapter.SneakersAdapter
 import com.sachin.sneaker_app.model.SneakerResponse
 import com.sachin.sneaker_app.repository.SneakerRepository
 import dagger.hilt.android.lifecycle.HiltViewModel

@@ -1,6 +1,5 @@
-package com.sachin.sneaker_app.adapter
+package com.sachin.sneaker_app.adapter.sneakerAdapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil

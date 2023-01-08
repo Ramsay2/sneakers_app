@@ -9,7 +9,7 @@
 
         <variable
             name="viewModel"
-            type="com.sachin.sneaker_app.adapter.SneakerItemViewModel" />
+            type="com.sachin.sneaker_app.adapter.sneakerAdapter.SneakerItemViewModel" />
 
     </data>
 

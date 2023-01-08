@@ -6,7 +6,7 @@
     <data>
     <variable
         name="viewModel"
-        type="com.sachin.sneaker_app.viewModel.SneakerViewModel" />
+        type="com.sachin.sneaker_app.view.sneakers_fragment.SneakerViewModel" />
 
     </data>
 

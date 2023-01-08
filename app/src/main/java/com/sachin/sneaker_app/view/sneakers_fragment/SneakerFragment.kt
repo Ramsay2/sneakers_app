@@ -1,7 +1,6 @@
 package com.sachin.sneaker_app.view.sneakers_fragment
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,12 +11,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.sachin.sneaker_app.R
-import com.sachin.sneaker_app.adapter.SneakersAdapter
+import com.sachin.sneaker_app.adapter.sneakerAdapter.SneakersAdapter
 import com.sachin.sneaker_app.databinding.DialogSneakerDetailsBinding
 import com.sachin.sneaker_app.databinding.FragmentSneakersBinding
 import com.sachin.sneaker_app.model.SneakerResponse
-import com.sachin.sneaker_app.viewModel.Navigator
-import com.sachin.sneaker_app.viewModel.SneakerViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 

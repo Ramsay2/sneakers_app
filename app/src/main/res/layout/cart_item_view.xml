@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-                type="com.sachin.sneaker_app.adapter.SneakerItemCartViewModel" />
+                type="com.sachin.sneaker_app.adapter.cart_adapter.SneakerItemCartViewModel" />
 
     </data>
     <com.google.android.material.card.MaterialCardView

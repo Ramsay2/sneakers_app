@@ -1,6 +1,5 @@
-package com.sachin.sneaker_app.adapter
+package com.sachin.sneaker_app.adapter.cart_adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -8,7 +7,6 @@ import androidx.databinding.ObservableField
 import androidx.recyclerview.widget.RecyclerView
 import com.sachin.sneaker_app.R
 import com.sachin.sneaker_app.databinding.CartItemViewBinding
-import com.sachin.sneaker_app.databinding.SneakerItemViewBinding
 import com.sachin.sneaker_app.model.SneakerResponse
 
 

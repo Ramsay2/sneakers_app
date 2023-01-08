@@ -13,7 +13,7 @@ import javax.inject.Inject
 @HiltViewModel
 class CartViewModel @Inject constructor(val repository: SneakerRepository) : ViewModel() {
 
-    val _sneakerData = mutableListOf<SneakerResponse>()
+    val sneakerData = mutableListOf<SneakerResponse>()
 
     fun getCartProducts(): LiveData<List<SneakerResponse>> {
         return repository.getAllCartProducts()
